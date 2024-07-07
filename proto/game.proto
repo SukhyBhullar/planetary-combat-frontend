@@ -1,0 +1,8 @@
+package planetary;
+syntax = "proto3";
+
+message Game {
+    string id = 1;
+    string charname = 2;
+    string seed = 3;
+}
