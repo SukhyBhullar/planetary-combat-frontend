@@ -9,20 +9,20 @@ var $Reader = $protobuf.Reader, $Writer = $protobuf.Writer, $util = $protobuf.ut
 // Exported root namespace
 var $root = $protobuf.roots["default"] || ($protobuf.roots["default"] = {});
 
-$root.awesomepackage = (function() {
+$root.planetary = (function() {
 
     /**
-     * Namespace awesomepackage.
-     * @exports awesomepackage
+     * Namespace planetary.
+     * @exports planetary
      * @namespace
      */
-    var awesomepackage = {};
+    var planetary = {};
 
-    awesomepackage.Game = (function() {
+    planetary.Game = (function() {
 
         /**
          * Properties of a Game.
-         * @memberof awesomepackage
+         * @memberof planetary
          * @interface IGame
          * @property {string|null} [id] Game id
          * @property {string|null} [charname] Game charname
@@ -31,11 +31,11 @@ $root.awesomepackage = (function() {
 
         /**
          * Constructs a new Game.
-         * @memberof awesomepackage
+         * @memberof planetary
          * @classdesc Represents a Game.
          * @implements IGame
          * @constructor
-         * @param {awesomepackage.IGame=} [properties] Properties to set
+         * @param {planetary.IGame=} [properties] Properties to set
          */
         function Game(properties) {
             if (properties)
@@ -47,7 +47,7 @@ $root.awesomepackage = (function() {
         /**
          * Game id.
          * @member {string} id
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @instance
          */
         Game.prototype.id = "";
@@ -55,7 +55,7 @@ $root.awesomepackage = (function() {
         /**
          * Game charname.
          * @member {string} charname
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @instance
          */
         Game.prototype.charname = "";
@@ -63,7 +63,7 @@ $root.awesomepackage = (function() {
         /**
          * Game seed.
          * @member {string} seed
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @instance
          */
         Game.prototype.seed = "";
@@ -71,21 +71,21 @@ $root.awesomepackage = (function() {
         /**
          * Creates a new Game instance using the specified properties.
          * @function create
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
-         * @param {awesomepackage.IGame=} [properties] Properties to set
-         * @returns {awesomepackage.Game} Game instance
+         * @param {planetary.IGame=} [properties] Properties to set
+         * @returns {planetary.Game} Game instance
          */
         Game.create = function create(properties) {
             return new Game(properties);
         };
 
         /**
-         * Encodes the specified Game message. Does not implicitly {@link awesomepackage.Game.verify|verify} messages.
+         * Encodes the specified Game message. Does not implicitly {@link planetary.Game.verify|verify} messages.
          * @function encode
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
-         * @param {awesomepackage.IGame} message Game message or plain object to encode
+         * @param {planetary.IGame} message Game message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -102,11 +102,11 @@ $root.awesomepackage = (function() {
         };
 
         /**
-         * Encodes the specified Game message, length delimited. Does not implicitly {@link awesomepackage.Game.verify|verify} messages.
+         * Encodes the specified Game message, length delimited. Does not implicitly {@link planetary.Game.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
-         * @param {awesomepackage.IGame} message Game message or plain object to encode
+         * @param {planetary.IGame} message Game message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -117,18 +117,18 @@ $root.awesomepackage = (function() {
         /**
          * Decodes a Game message from the specified reader or buffer.
          * @function decode
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {awesomepackage.Game} Game
+         * @returns {planetary.Game} Game
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Game.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.awesomepackage.Game();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.planetary.Game();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -155,10 +155,10 @@ $root.awesomepackage = (function() {
         /**
          * Decodes a Game message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {awesomepackage.Game} Game
+         * @returns {planetary.Game} Game
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -171,7 +171,7 @@ $root.awesomepackage = (function() {
         /**
          * Verifies a Game message.
          * @function verify
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -194,15 +194,15 @@ $root.awesomepackage = (function() {
         /**
          * Creates a Game message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {awesomepackage.Game} Game
+         * @returns {planetary.Game} Game
          */
         Game.fromObject = function fromObject(object) {
-            if (object instanceof $root.awesomepackage.Game)
+            if (object instanceof $root.planetary.Game)
                 return object;
-            var message = new $root.awesomepackage.Game();
+            var message = new $root.planetary.Game();
             if (object.id != null)
                 message.id = String(object.id);
             if (object.charname != null)
@@ -215,9 +215,9 @@ $root.awesomepackage = (function() {
         /**
          * Creates a plain object from a Game message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
-         * @param {awesomepackage.Game} message Game
+         * @param {planetary.Game} message Game
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -242,7 +242,7 @@ $root.awesomepackage = (function() {
         /**
          * Converts this Game to JSON.
          * @function toJSON
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -253,7 +253,7 @@ $root.awesomepackage = (function() {
         /**
          * Gets the default type url for Game
          * @function getTypeUrl
-         * @memberof awesomepackage.Game
+         * @memberof planetary.Game
          * @static
          * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
          * @returns {string} The default type url
@@ -262,13 +262,13 @@ $root.awesomepackage = (function() {
             if (typeUrlPrefix === undefined) {
                 typeUrlPrefix = "type.googleapis.com";
             }
-            return typeUrlPrefix + "/awesomepackage.Game";
+            return typeUrlPrefix + "/planetary.Game";
         };
 
         return Game;
     })();
 
-    return awesomepackage;
+    return planetary;
 })();
 
 module.exports = $root;

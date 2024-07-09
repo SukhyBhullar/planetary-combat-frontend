@@ -1,7 +1,7 @@
 import * as $protobuf from "protobufjs";
 import Long = require("long");
-/** Namespace awesomepackage. */
-export namespace awesomepackage {
+/** Namespace planetary. */
+export namespace planetary {
 
     /** Properties of a Game. */
     interface IGame {
@@ -23,7 +23,7 @@ export namespace awesomepackage {
          * Constructs a new Game.
          * @param [properties] Properties to set
          */
-        constructor(properties?: awesomepackage.IGame);
+        constructor(properties?: planetary.IGame);
 
         /** Game id. */
         public id: string;
@@ -39,23 +39,23 @@ export namespace awesomepackage {
          * @param [properties] Properties to set
          * @returns Game instance
          */
-        public static create(properties?: awesomepackage.IGame): awesomepackage.Game;
+        public static create(properties?: planetary.IGame): planetary.Game;
 
         /**
-         * Encodes the specified Game message. Does not implicitly {@link awesomepackage.Game.verify|verify} messages.
+         * Encodes the specified Game message. Does not implicitly {@link planetary.Game.verify|verify} messages.
          * @param message Game message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: awesomepackage.IGame, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: planetary.IGame, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Game message, length delimited. Does not implicitly {@link awesomepackage.Game.verify|verify} messages.
+         * Encodes the specified Game message, length delimited. Does not implicitly {@link planetary.Game.verify|verify} messages.
          * @param message Game message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: awesomepackage.IGame, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: planetary.IGame, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a Game message from the specified reader or buffer.
@@ -65,7 +65,7 @@ export namespace awesomepackage {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): awesomepackage.Game;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): planetary.Game;
 
         /**
          * Decodes a Game message from the specified reader or buffer, length delimited.
@@ -74,7 +74,7 @@ export namespace awesomepackage {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): awesomepackage.Game;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): planetary.Game;
 
         /**
          * Verifies a Game message.
@@ -88,7 +88,7 @@ export namespace awesomepackage {
          * @param object Plain object
          * @returns Game
          */
-        public static fromObject(object: { [k: string]: any }): awesomepackage.Game;
+        public static fromObject(object: { [k: string]: any }): planetary.Game;
 
         /**
          * Creates a plain object from a Game message. Also converts values to other types if specified.
@@ -96,7 +96,7 @@ export namespace awesomepackage {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: awesomepackage.Game, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: planetary.Game, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Game to JSON.

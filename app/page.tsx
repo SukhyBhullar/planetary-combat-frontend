@@ -1,6 +1,5 @@
 import { createClient } from "redis";
-import protobuf from "protobufjs";
-
+import Game from "../proto/compiled";
 export default function Home() {
   async function createInvoice(formData: FormData) {
     "use server";
@@ -15,7 +14,19 @@ export default function Home() {
       .on("error", (err) => console.log("Redis Client Error", err))
       .connect();
 
-    await client.publish("messages", rawFormData.message);
+    var msg = Game.planetary.Game.encode({
+      id: "a",
+      charname: rawFormData.message,
+      seed: "999",
+    }).finish();
+
+    let decoder = new TextDecoder("utf-8");
+
+    // Using decode method to get string output
+    let str = decoder.decode(msg);
+    console.log(msg);
+    console.log(msg.length);
+    await client.publish("messages", str);
     await client.disconnect();
   }
 
